@@ -10,7 +10,7 @@
         height: 100%;
         padding: 0;
         margin: 0;
-        font-size: 20cm;
+        font-size: 16px;
       }
       .page {
         margin: 0;
@@ -19,26 +19,60 @@
         text-align: center;
         vertical-align: middle;
       }
-      h1 {
-        overflow: hidden;
-        white-space: nowrap;
+      h1, h2 {
         margin: 0;
         padding: 0;
-        font-size: 0.25em;
         line-height: 1.1em;
       }
+      h1 { font-size: 5em; }
+      h2 { font-size: 2.5em; }
       p {
-        font-size: 0.05em;
+        font-size: 1em;
         line-height: 1em;
       }
     </style>
+    <style type="text/css" media="screen">
+      div {
+        padding: 1em 5em;
+      }
+    </style>
     <style type="text/css" media="print">
+      .dont-print {
+        display: none;
+      }
+      h1, h2 {
+        overflow: hidden;
+        white-space: nowrap;
+      }
       .page {
+        font-size: 1cm;
         page-break-after: always;
       }
     </style>
   </head>
   <body>
+    <div class="dont-print">
+      <h1>Scrum board headers</h1>
+      <p>
+        These are some useful headers that can be printed and placed above each
+        column in your scrum board. They include a description of what each
+        column means so that anyone not familiar with Scrum or Agile can
+        understand what the columns mean.
+      </p>
+      <h2>Usage</h2>
+      <p>
+        Just hit print (<code>Ctrl</code> + <code>p</code> or <code>Cmd</code>
+        + <code>p</code>) and print these out in Landscape.
+      </p>
+      <p>
+        The CSS is set up to print each header and description on a separate A4
+        page.
+      </p>
+      <p>
+        This explanation won't be printed.
+      </p>
+
+    </div>
     <div class="page">
       <h1>To Do</h1>
       <p>What's left of what we have committed to this sprint</p>
